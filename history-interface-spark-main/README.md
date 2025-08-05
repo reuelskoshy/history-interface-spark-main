@@ -1,59 +1,92 @@
-# Welcome to your Lovable project
+# History Interface Spark
 
-## Project info
+A web application showcasing the evolution of Human-Computer Interaction (HCI) interfaces across different eras.
 
-**URL**: https://lovable.dev/projects/1afd5a89-d7eb-4852-83e5-590c1da102ab
+## Features
 
-## How can I edit this code?
+- Timeline of HCI history
+- Interactive demos
+- Future trends section
+- Responsive design
+- Modern UI with shadcn-ui and Tailwind CSS
 
-There are several ways of editing your application.
+## Technologies Used
 
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [shadcn-ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Radix UI](https://www.radix-ui.com/)
+- [React Router](https://reactrouter.com/)
+- [TanStack React Query](https://tanstack.com/query/latest)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
+cd history-interface-spark-main
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Development
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal) to view the app.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build
 
-**Use GitHub Codespaces**
+```sh
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Preview Production Build
 
-## What technologies are used for this project?
+```sh
+npm run preview
+```
 
-This project is built with:
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+  components/
+    ui/                # UI components (Sheet, Toaster, etc.)
+    HeroSection.tsx
+    TimelineSection.tsx
+    InteractiveDemo.tsx
+    FutureSection.tsx
+    Footer.tsx
+  pages/
+    Index.tsx          # Main landing page
+    NotFound.tsx       # 404 page
+  assets/              # Images and static assets
+  main.tsx             # App entry point
+  App.tsx              # App root component
+  index.css            # Global styles
+```
+
+## Customization
+
+- Update content in `src/pages/Index.tsx` and components in `src/components/` to fit your needs.
+- Change styles in `src/index.css` and Tailwind config.
+
+## Authors
+
+- Saranya Ray 
+- Reuel Sajeev Koshy
+
+## License
+
+MIT
 
